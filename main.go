@@ -99,4 +99,105 @@ func main() {
 	// )
 	// fmt.Println(a, b, c, d)
 
+	//REVIEW "for" works like a while loop, everything else is exactly as usual with looping
+	// for x := 33; x <= 122; x++ {
+	// 	fmt.Printf("%v\t%#U\n", x, x)
+	// }
+
+	// sum := 1
+	// for sum < 1000 {
+	// 	sum += sum
+	// }
+	// fmt.Println(sum)
+
+	//REVIEW with no condition, loop runs until hitting a break
+	// for {
+	//       fmt.Println("loop")
+	//       break
+	// 	}
+
+	//REVIEW You can also continue to the next iteration of the loop (won't continue until conditional evaluates to true)
+	// for n := 0; n <= 5; n++ {
+	// 	if n%2 == 0 {
+	// 		continue
+	// 	}
+	// 	fmt.Println(n)
+	// }
+
+	// for i := 0; i < 100; i++ {
+	// 	if i%2 == 0 {
+	// 		fmt.Println(i)
+	// 	}
+	// }
+
+	//REVIEW switch statements work exactly the same
+	// switch {
+	// case false:
+	// 	fmt.Println("this should not print")
+	// case 2 == 4:
+	// 	fmt.Println("this should not print")
+	// case 3 == 3:
+	// 	fmt.Println("3 == 3")
+	// 	fallthrough //REVIEW with fallthrough even when a case evaluates as true it will still go to the next case
+	// case 4 == 4:
+	// 	fmt.Println("4 == 4")
+	// 	fallthrough
+	// case 5 == 4:
+	// 	fmt.Println("this should not print")
+	// 	fallthrough
+	// case 7 == 9:
+	// 	fmt.Println("this should not print")
+	// 	fallthrough
+	// case 8 == 8:
+	// 	fmt.Println("8 == 8")
+	// default:
+	// fmt.Println("default")
+	// }
+
+	// i := 65
+	// for i <= 90 {
+	// 	for j := 0; j < 3; j++ {
+	// 		fmt.Printf("%#U\n", i)
+	// 	}
+	// 	i++
+	// }
+
+	// i := 2020
+	// for i >= 1990 {
+	// 	fmt.Println(i)
+	// 	i--
+	// }
+
+	// i := 2020
+	// for {
+	// 	if i < 1990 {
+	// 		break
+	// 	}
+	// 	fmt.Println(i)
+	// 	i--
+	// }
+
+	// i := 10
+	// for i <= 100 {
+	// 	fmt.Println(i % 4)
+	// 	i++
+	// }
+
+	// for i := 0; i <= 10; i++ {
+	// 	if i%2 == 0 {
+	// 		fmt.Println("even")
+	// 	} else if i%2 != 0 {
+	// 		fmt.Println("odd")
+	// 	}
+	// }
+
+	// favSport := "swim"
+	// switch favSport {
+	// case "skiing":
+	// 	fmt.Println("mountains")
+	// case "hockey":
+	// 	fmt.Println("HIT HIM")
+	// default:
+	// 	fmt.Println("I hate sports")
+	// }
 }
