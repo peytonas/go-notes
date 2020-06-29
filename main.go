@@ -60,8 +60,31 @@ package main
 // 	b        //2
 // 	c        //3
 // )
+// var x = 0
+// var g = func() {
+// 	x++
+// 	fmt.Println("testing\n", x)
+// }
 
 func main() {
+
+	// f := func() {
+	// 	for i := 0; i < 3; i++ {
+	// 		fmt.Println(i)
+	// 	}
+	// }
+	// f()
+	// g()
+	// fmt.Printf("%T\n", f)
+	// fmt.Printf("%T\n", g)
+
+	//REVIEW intseq calls an anonymous func and returns an int; the anonymous func also returns an int ("i"), and provides closure for the returned func and variable i;
+	// func() {
+	// 	for i := 0; i <= 100; i++ {
+	// 		fmt.Println(i)
+	// 	}
+	// }() //this second set of parens calls the anonymous function "func()"
+
 	// p1 := Person{
 	// 	first: "Peyton",
 	// 	last:  "Sonnefeld",
