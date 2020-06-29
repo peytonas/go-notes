@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // type T1 int
 
 // var x T1
@@ -9,6 +11,20 @@ package main
 // var b = "James Bond"
 // var c = true
 
+func fizzBuzz() {
+	for i := 1; i <= 100; i++ {
+		if i%15 == 0 {
+			fmt.Printf("%v\tFizzBuzz\n", i)
+		} else if i%5 == 0 {
+			fmt.Printf("%v\tBuzz\n", i)
+		} else if i%3 == 0 {
+			fmt.Printf("%v\tFizz\n", i)
+		} else {
+			fmt.Printf("%v\tNA\n", i)
+		}
+	}
+}
+
 //REVIEW "iota" is a special type declaration that increments each variable's value within the const
 // const (
 // 	a = iota //1
@@ -17,6 +33,7 @@ package main
 // )
 
 func main() {
+	fizzBuzz()
 
 	//REVIEW fmt.Sprintf formats a single-line string based on inputs received(a,b,c)
 	// s := fmt.Sprintf("%v\t%v\t%v", a, b, c)
