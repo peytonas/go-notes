@@ -1,29 +1,58 @@
 package main
 
-import "fmt"
+// type Person struct {
+// 	first string
+// 	last  string
+// 	age   int
+// }
 
-// type T1 int
+//REVIEW function takes in a param of type person and passes them the method speak
+// func (p Person) speak() {
+// 	fmt.Println("I am", p.first, p.last, "and I am", p.age, "years old.")
+// }
 
-// var x T1
-// var y int
+//REVIEW foo takes in a series of ints, and returns an int, loops through/adds together the variadic slice, returns total
+// func foo(nums ...int) int {
+// 	total := 0
+// 	for _, num := range nums {
+// 		total += num
+// 	}
+// 	fmt.Println(total)
+// 	return total
+// }
 
-// var a = 42
-// var b = "James Bond"
-// var c = true
+//REVIEW same as foo except bar takes in a slice of ints, and returns an int, loops through/adds together the slice, returns total
+// func bar(ints []int) int {
+// 	total := 0
+// 	for _, num := range ints {
+// 		total += num
+// 	}
+// 	fmt.Println(total)
+// 	return total
+// }
 
-func fizzBuzz() {
-	for i := 1; i <= 100; i++ {
-		if i%15 == 0 {
-			fmt.Printf("%v\tFizzBuzz\n", i)
-		} else if i%5 == 0 {
-			fmt.Printf("%v\tBuzz\n", i)
-		} else if i%3 == 0 {
-			fmt.Printf("%v\tFizz\n", i)
-		} else {
-			fmt.Printf("%v\tNA\n", i)
-		}
-	}
-}
+// func foo() {
+// 	fmt.Println("Hello World")
+// }
+
+// func bar() {
+// 	fmt.Println("Goodbye World")
+// }
+
+//REVIEW Go fizzbuzz
+// func fizzBuzz() {
+// 	for i := 1; i <= 100; i++ {
+// 		if i%15 == 0 {
+// 			fmt.Printf("%v\tFizzBuzz\n", i)
+// 		} else if i%5 == 0 {
+// 			fmt.Printf("%v\tBuzz\n", i)
+// 		} else if i%3 == 0 {
+// 			fmt.Printf("%v\tFizz\n", i)
+// 		} else {
+// 			fmt.Printf("%v\tNA\n", i)
+// 		}
+// 	}
+// }
 
 //REVIEW "iota" is a special type declaration that increments each variable's value within the const
 // const (
@@ -33,7 +62,21 @@ func fizzBuzz() {
 // )
 
 func main() {
-	fizzBuzz()
+	// p1 := Person{
+	// 	first: "Peyton",
+	// 	last:  "Sonnefeld",
+	// 	age:   30,
+	// }
+	// p1.speak()
+
+	//REVIEW defer forces the called function to wait til everything else has run (until main ends in this case), and then runs foo.
+	// defer foo()
+	// bar()
+	// nums := []int{1, 2, 3, 4, 5}
+	// foo(nums...)
+	// bar(nums)
+
+	// fizzBuzz()
 
 	//REVIEW fmt.Sprintf formats a single-line string based on inputs received(a,b,c)
 	// s := fmt.Sprintf("%v\t%v\t%v", a, b, c)
